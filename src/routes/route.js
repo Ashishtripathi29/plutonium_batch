@@ -70,4 +70,77 @@ router.post("/test-post-4", function(req, res) {
     res.send(  { msg: arr , status: true }  )
 })
 
+
+
+// Problem Statement 1 :
+// NOTE: you must create the players array outside( on the top ) of the api( so that data is maintained across api hits )
+// Your player collection should be an ARRAY of player objects. Each player object should have the following attributes:
+// {
+// "name": "manish",
+// "dob": "1/1/1995",
+// "gender": "male",
+// "city": "jalandhar",
+// "sports": [
+// "swimming"
+// ]
+// }
+
+// solve 
+// playerArr is a array of player info
+const playerArr=[
+{
+    "name":"Raju",
+    "dob":"1//2000",
+    "gender":"mail",
+    "city":"prayagraj",
+    "sports":["cricket"]
+
+},
+{
+    "name":"Rajesh",
+    "dob":"1//2001",
+    "gender":"mail",
+    "city":"prayagraj",
+    "sports":["hocky"]
+
+},
+{
+    "name":"Ramesh",
+    "dob":"1//2002",
+    "gender":"mail",
+    "city":"varanshi",
+    "sports":["kabaddi"]
+
+},
+{
+    "name":"Raman",
+    "dob":"1//2003",
+    "gender":"mail",
+    "city":"mathura",
+    "sports":["batmintal"]
+
+}
+
+]
+router.post("/get_player_info",function(req,res){
+// logic start from here
+let getPlayerFromUser=req.body
+let isUserMatch=false;
+// for (let index = 0; index < playerArr.length; index++) {
+//    if(playerArr[index].name==getPlayerFromUser.name){
+//     isUserMatch=true;
+//    return res.send(getPlayerFromUser," that name of user already , try again....")
+
+//    }
+    
+// }
+//  res.send(playerArr.push(getPlayerFromUser))
+ res.send("playerArr.push(getPlayerFromUser)")
+})
+
+
+
+
+
+
 module.exports = router;
