@@ -3,6 +3,7 @@ const router = express.Router();
 // const UserModel= require("../models/userModel.js")
 const UserController= require("../controllers/userController")
 const BookController= require("../controllers/bookController")
+const newBookController= require("../controllers/newBookController")
 
 router.get("/test-me", function (req, res) {
     res.send("My first ever api!")
@@ -37,5 +38,11 @@ router.get("/dateManipulations", function (req, res) {
 
     res.send({ msg: "all good"})
 })
+router.post("/ashish",function(req,res){
+    const data=req.query
+    res.send(data)
+})
+// w5d3
+router.post("/newCreateBook",newBookController.createBook)
 
 module.exports = router;
