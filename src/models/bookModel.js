@@ -13,8 +13,8 @@ const bookSchema = new mongoose.Schema( {
     sales: {type: Number, default: 10}
 }, { timestamps: true });
 
+module.exports=mongoose.model('Book', bookSchema) 
 
-module.exports = mongoose.model('Book', bookSchema) //users
 
 //Validation:
 //require:true
