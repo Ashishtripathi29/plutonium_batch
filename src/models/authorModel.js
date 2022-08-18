@@ -12,4 +12,4 @@ const authorSchema = new mongoose.Schema( {
         age:Number,
         address:String,
 },{ timestamps: true })
-module.exports=mongoose.model("mongoBookw5d3",authorSchema)
+module.exports=mongoose.model("mongoAuthorw5d3",authorSchema)
