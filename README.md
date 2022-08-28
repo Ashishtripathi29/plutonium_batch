@@ -61,7 +61,6 @@ For every purchase we save an order document in the orders collection. isFreeApp
 - Update the logic in middleware to set the **isFreeAppUser** attribute in req. Use this attribute in the route handler for setting the isFreeAppUser attributes of User and Order collection. 
 
 ### Hints for problem 3
-
 1. Validate the header in a middleware. Terminate the req-res cycle if this fails.
 2. Validate the userId. Send error if userId is invalid
 3. Validate the productId. Send the error if productId is invalid
