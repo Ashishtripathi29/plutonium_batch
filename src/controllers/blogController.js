@@ -148,7 +148,6 @@ const blogDelete = async function (req, res) {
     }
 }
 
-<<<<<<< HEAD
 
 // --------------------------------------------mygetself---------------------------------
 // ### PUT /blogs/:blogId
@@ -189,11 +188,8 @@ const getUpdated=async function(req,res){
 
 module.exports.createBlog = createBlog
 module.exports.getUpdated = getUpdated
-
-
-=======
 module.exports.createBlog = createBlog
 module.exports.getBlog = getBlog
 module.exports.blogDelete = blogDelete
 module.exports.deleteBlog = deleteBlog 
->>>>>>> b470cc748ec85980cb84d48925f7a2584e3d48fa
+
