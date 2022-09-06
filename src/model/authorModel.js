@@ -19,7 +19,7 @@ const authorSchema = new mongoose.Schema({
         type : String,
         unique: true,
         required: true,
-        match: [/^(?:[a-zA-Z]{3})\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/]
+        match: [/^(?:[]{3})\w+([\.-]?a-zA-Z\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/]
       }, 
         password: {
             type : String,

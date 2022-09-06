@@ -15,4 +15,19 @@ router.post('/authers',authorController.createAuthor)
 router.post('/createBlog', blogController.createBlog)
 
 
-module.exports = router
+
+// ------------------------------------------------put api-------------------------------------------------------------------------
+router.put('/blogs/:blogId',blogController.getUpdated)
+
+
+
+
+
+
+
+
+
+
+
+
+    module.exports=router;
