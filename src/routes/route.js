@@ -21,4 +21,5 @@ router.get('/getBlog', blogController.getBlog)
 
 //==================== blogDetet based on category, authorid, tag name, subcategory name, unpublished =============
 router.post('/blogs/delete', blogController.blogDelete)
+router.put('/blogs/:blogId', blogController.getUpdated)
 module.exports = router

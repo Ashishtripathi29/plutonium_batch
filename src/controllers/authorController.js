@@ -12,25 +12,5 @@ const createAuthor=async function(req,res){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // exporting createAuthor-----
 module.exports.createAuthor=createAuthor
