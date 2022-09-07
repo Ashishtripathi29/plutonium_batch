@@ -28,4 +28,24 @@ router.delete('/deleteBlog/:blogId' , blogController.deleteBlog)
 
 //==================== blogDetet based on category, authorid, tag name, subcategory name, unpublished =============
 router.post('/blogs/delete', blogController.blogDelete)
+<<<<<<< HEAD
 module.exports = router
+=======
+
+
+// ------------------------------------------------put api-------------------------------------------------------------------------
+router.put('/blogs/:blogId',blogController.getUpdated)
+
+
+
+
+
+
+
+
+
+
+
+
+    module.exports=router;
+>>>>>>> 6f9c68a5c4b309fb91badda6e29f08971e133e39

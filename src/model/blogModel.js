@@ -16,7 +16,11 @@ const blogSchema = new mongoose.Schema(
             required: true,
         },
         tags: {
+<<<<<<< HEAD
             type: [String],
+=======
+            type:[String],
+>>>>>>> 6f9c68a5c4b309fb91badda6e29f08971e133e39
             enum: ["Book", "Friends", "Self help"]
         },
         category: {
@@ -25,7 +29,7 @@ const blogSchema = new mongoose.Schema(
             enum: ["technology", "entertainment", "life style", "food", "fashion"]
         },
         subcategory: {
-            type: [ String],
+            type: [String],
             required : true
         },
 

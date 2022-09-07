@@ -11,11 +11,34 @@ const createAuthor=async function(req,res){
    }
 }
 
+<<<<<<< HEAD
 // exporting createAuthor-----
 module.exports.createAuthor=createAuthor
+=======
+>>>>>>> 6f9c68a5c4b309fb91badda6e29f08971e133e39
 
 
 
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------- exporting createAuthor--------------------------------------------
+module.exports.createAuthor=createAuthor
+>>>>>>> 6f9c68a5c4b309fb91badda6e29f08971e133e39
