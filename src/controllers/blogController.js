@@ -30,7 +30,7 @@ const blogDelete = async function (req, res) {
     try {
 
         const data = req.query
-        const deleteData = await blogModel.updateMany(data, { isDeleted: false}, { new: true })
+        const deleteData = await blogModel.updateMany(data, { isDeleted: true}, { new: true })
         if (deleteData.matchedCount == 0) return res.status(404).send({ status: 404, msg: "data not found" })
         res.send(deleteData)
     } catch (error) {
