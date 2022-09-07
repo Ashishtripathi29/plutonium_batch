@@ -120,6 +120,7 @@ const getUpdated=async function(req,res){
     }
 module.exports.createBlog = createBlog
 module.exports.getBlog = getBlog
-module.exports.blogDelete = blogDelete
 module.exports.getUpdated = getUpdated
+module.exports.blogDelete = blogDelete
+// module.exports.getUpdated = getUpdated
 

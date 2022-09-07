@@ -14,12 +14,18 @@ router.post('/authers',authorController.createAuthor)
 //-------------------create blog--------------------
 router.post('/createBlog', blogController.createBlog)
 
+//----------------------get-blog-------------------
 router.get('/getBlog', blogController.getBlog)
 
+// ------------------- update blog --------------
+router.put('/blogs/:blogId', blogController.getUpdated)
 
+
+//--------------------Delete-Blog--------------
+
+router.delete('/deleteBlog/:blogId' , blogController.deleteBlog)
 
 
 //==================== blogDetet based on category, authorid, tag name, subcategory name, unpublished =============
 router.post('/blogs/delete', blogController.blogDelete)
-router.put('/blogs/:blogId', blogController.getUpdated)
 module.exports = router
